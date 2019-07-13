@@ -5,7 +5,6 @@ const vm =  new Vue({
     el:"#app",
     data() {
         return {
-            
             a:{
                 title:"我是p标签"
             },
