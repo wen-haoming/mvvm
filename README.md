@@ -1,6 +1,1 @@
-（```）
-    function (){
-        console.log(你好我)
-        呵呵
-    }
-(```)
+# 模拟实现mvvm的远离
