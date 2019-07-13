@@ -1,6 +1,6 @@
 //模版编译
 import { Compile } from "./compile";
-//订阅这
+//订阅者
 import {Dep} from './dep'
 
 
