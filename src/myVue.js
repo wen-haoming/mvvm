@@ -50,6 +50,7 @@ import {Watcher} from './watcher'
    let dep = new Dep()
    Object.defineProperty(data,key,{
          get(){
+            //添加到订阅函数里面
             Dep.target && dep.addSub(Dep.target)  
             return val
          },
@@ -57,7 +58,9 @@ import {Watcher} from './watcher'
             if(newVal === val){
                   return val
             }
+            //设置新的值
             val = newVal
+            //触发发布订阅从而试图改变
             dep.notify(val)
             observe(data)
          }
