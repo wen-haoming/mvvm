@@ -11,5 +11,12 @@ module.exports = {
             {}
         ]
     },
-    devtool:'source-map'
+    plugins:[
+        new webpack.HotModuleReplacementPlugin()
+    ],
+    devServer:{
+        contentBase:'./dist',
+        hot:true
+    },
+    devtool:'source-map',
 }
